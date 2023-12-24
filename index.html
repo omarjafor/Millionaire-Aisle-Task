@@ -36,7 +36,7 @@
 </head>
 
 <body class="bg-[#F9F9F9]">
-    <header class="bg-base-100 pb-[160px]" style="background-image: url('./assets/Banner/banner-bg.png');">
+    <header class="pb-[160px]" style="background-image: url('./assets/Banner/banner-bg.png');">
         <!-- navbar section  -->
         <div class="navbar pt-6">
             <div class="navbar-start mx-20 lg:ml-[150px]">
@@ -308,7 +308,6 @@
                         class="w-full" height="700"></iframe>
                 </div>
             </section>
-
             <div class="absolute z-0 left-0 top-6 hidden lg:flex">
                 <svg xmlns="http://www.w3.org/2000/svg" width="970" height="1105" viewBox="0 0 970 1105" fill="none">
                     <path opacity="0.06"
@@ -325,10 +324,81 @@
             </div>
         </section>
         <!-- Latest News Section  -->
-        <section>
-            <div class="flex justify-between flex-col lg:flex-row mx-[150px] mt-10">
+        <section class="mx-5 lg:mx-[150px] lg:my-[120px]">
+            <div class="flex justify-between items-center flex-col lg:flex-row mb-8">
                 <h2 class="text-[#00142C] text-[55px] font-bold leading-[67px]">Latest News</h2>
-                <button class="text-lg font-bold" style="background: var(--Gr, linear-gradient(135deg, #D32053 3.44%, #460BC6 95.97%));  background-clip: text;  -webkit-background-clip: text; -webkit-text-fill-color: transparent;">View All</button>
+                <div class="bg-gray-200 border rounded-md px-4 py-3">
+                    <a class="text-lg font-bold"
+                        style="background: var(--Gr, linear-gradient(135deg, #D32053 3.44%, #460BC6 95.97%));  background-clip: text;  -webkit-background-clip: text; -webkit-text-fill-color: transparent;">View
+                        All</a>
+                </div>
+            </div>
+            <div class="grid gap-8 grid-cols-2 lg:grid-cols-4">
+                <div class="col-span-2 bg-white rounded-md">
+                    <img src="./assets/News/img1.png" alt="">
+                    <div class="p-5">
+                        <h2 class="text-[#00142C] text-xl font-bold overflow-x-hidden mb-5">At-Home Valentine’s Day Ideas</h2>
+                        <p class="text-[#334356] font-normal text-base text-justify mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Id ornare arcu odio ut sem nulla. Sagittis aliquam malesuada bibendum arcu vitae elementum curabitur.</p>
+                        <a class="text-lg font-bold"
+                            style="background: var(--Gr, linear-gradient(135deg, #D32053 3.44%, #460BC6 95.97%));  background-clip: text;  -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Read
+                            More</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-md">
+                    <img src="./assets/News/img2.png" alt="">
+                    <div class="p-5">
+                        <h2 class="text-[#00142C] text-xl font-bold overflow-x-hidden mb-5">How to Save Money on Baby...</h2>
+                        <p class="text-[#334356] font-normal text-base text-justify mb-5">Id ornare arcu odio ut sem nulla. Sagittis aliquam
+                            malesuada bibendum arcu vitae elementum curabitur. Velit dignissim
+                            sodales</p>
+                        <a class="text-lg font-bold"
+                            style="background: var(--Gr, linear-gradient(135deg, #D32053 3.44%, #460BC6 95.97%));  background-clip: text;  -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Read
+                            More</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-md">
+                    <img src="./assets/News/img3.png" alt="">
+                    <div class="p-5">
+                        <h2 class="text-[#00142C] text-xl font-bold overflow-x-hidden mb-5">Clever Ways to Celebrate...</h2>
+                        <p class="text-[#334356] font-normal text-base text-justify mb-5">Id cursus metus aliquam eleifend mi in nulla posuere.
+                            Ipsum faucibus vitae aliquet nec ullamcorper sit.</p>
+                        <a class="text-lg font-bold"
+                            style="background: var(--Gr, linear-gradient(135deg, #D32053 3.44%, #460BC6 95.97%));  background-clip: text;  -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Read
+                            More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Download App Section  -->
+        <section class="relative" style="background-image: url('./assets/Download/bg-dwnld.png');">
+            <div class="flex flex-col lg:flex-row gap-10 items-center justify-between mx-5 lg:mx-[150px] pt-28 pb-16">
+                <div>
+                    <h2 class="text-[#00142C] font-bold text-[55px] leading-[67px]">Download <br> The App Now</h2>
+                    <p class="mt-8 mb-10">You can easily download our application on App Store and<br> Google play</p>
+                    <div class="flex gap-6 h-12">
+                        <img src="./assets/Download/apple.png" alt="">
+                        <img src="./assets/Download/google.png" alt="">
+                    </div>
+                </div>
+                <div class="relative lg:mr-24">
+                    <img src="./assets/Download/Screen.png" alt="" >
+                </div>
+            </div>
+            <div class="absolute z-0 left-96 top-6 hidden lg:flex">
+                <svg xmlns="http://www.w3.org/2000/svg" width="656" height="550" viewBox="0 0 656 656" fill="none">
+                    <path opacity="0.03"
+                        d="M610.932 540.205L494.91 571.293C478.15 575.752 460.306 573.386 445.286 564.715C430.267 556.044 419.296 541.773 414.778 525.029C408.907 503.125 406.052 480.521 406.293 457.845C406.524 424.334 398.731 391.255 383.565 361.372C368.399 331.488 346.301 305.669 319.117 286.071L316.922 284.763L315.158 287.723C285.753 349.54 288.572 420.644 322.816 478.316C334.713 498.345 343.806 519.911 349.839 542.412C354.302 559.174 351.94 577.021 343.269 592.044C334.598 607.067 320.326 618.041 303.579 622.56L188.855 653.3C173.356 657.453 156.841 655.279 142.944 647.256C129.048 639.233 118.908 626.018 114.754 610.518L2.93386 193.198C-1.52475 176.438 0.840732 158.594 9.51216 143.575C18.1836 128.556 32.4541 117.585 49.1979 113.066L79.4901 104.95C108.115 97.2221 138.626 100.977 164.523 115.415L165.449 115.95L293.44 192.384L373.104 57.9427C388.415 33.4597 412.449 15.7018 440.349 8.25763L461.762 2.52023C478.522 -1.93838 496.366 0.427101 511.385 9.09853C526.404 17.77 537.375 32.0404 541.893 48.7843L653.714 466.104C657.867 481.604 655.693 498.119 647.67 512.015C639.646 525.912 626.432 536.052 610.932 540.205ZM479.264 505.889L587.039 477.01L477.424 67.9205L457.749 73.1925C446.387 76.2245 436.577 83.4107 430.26 93.3292L351.232 226.834L356.063 229.733L357.202 230.541C393.504 256.402 423.038 290.632 443.301 330.332C463.563 370.031 473.958 414.03 473.604 458.6C473.406 474.543 475.308 490.443 479.264 505.889ZM177.949 586.625L284.426 558.095C279.99 542.126 273.454 526.816 264.989 512.567C218.976 435.064 215.331 339.579 255.222 257.153L255.836 255.875L259.178 250.23L131.496 173.974C120.914 168.216 108.522 166.751 96.8893 169.884L68.3342 177.536L177.949 586.625Z"
+                        fill="url(#paint0_linear_1_399)" />
+                    <defs>
+                        <linearGradient id="paint0_linear_1_399" x1="8.99544" y1="144.457" x2="641.321" y2="509.53"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#D32053" />
+                            <stop offset="1" stop-color="#460BC6" />
+                        </linearGradient>
+                    </defs>
+                </svg>
             </div>
         </section>
     </main>
