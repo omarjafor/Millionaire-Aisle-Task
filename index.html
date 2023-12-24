@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fav-icon link  -->
+    <link type="image/png" sizes="16x16" rel="icon" href="./assets/Banner/title-word.png">
+    <link type="image/png" sizes="32x32" rel="icon" href="./assets/Banner/title-word.png">
+    <link type="image/png" sizes="96x96" rel="icon" href="./assets/Banner/title-word.png">
+    <!-- Google Font Link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome Link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Tailwind & DaisyUI Link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Millionaire Aisle</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .hidemapbar {
+            position: relative;
+            clip-path: polygon(0% 10%, 100% 10%, 100% 100%, 0% 100%);
+            top: -1em;
+            border: inherit;
+        }
+    </style>
+</head>
+
+<body class="bg-[#F9F9F9]">
+    <header class="bg-base-100 pb-[160px]" style="background-image: url('./assets/Banner/banner-bg.png');">
+        <!-- navbar section  -->
+        <div class="navbar pt-6">
+            <div class="navbar-start mx-20 lg:ml-[150px]">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="white">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Draw</a></li>
+                        <li><a>Lottery</a></li>
+                        <li><a>Scratch and Win</a></li>
+                        <li><a>Wallet</a></li>
+                        <li><a>Account</a></li>
+                        <li><a>Cart</a></li>
+                    </ul>
+                </div>
+                <h1>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                        <path
+                            d="M44.0509 49.4048H33.4147C31.879 49.402 30.407 48.7908 29.321 47.705C28.2351 46.6191 27.6239 45.1472 27.6211 43.6116C27.6209 41.6036 27.8948 39.6051 28.4352 37.6712C29.2229 34.8104 29.3144 31.8027 28.7021 28.8993C28.0898 25.9959 26.7915 23.2813 24.9155 20.9822L24.7578 20.82L24.539 21.0328C20.6072 25.6459 19.2187 31.7917 20.826 37.509C21.3845 39.4946 21.6679 41.5475 21.6683 43.6101C21.6659 45.146 21.0548 46.6183 19.9689 47.7044C18.8829 48.7906 17.4107 49.402 15.8747 49.4048H5.35754C3.93663 49.4048 2.57392 48.8404 1.56919 47.8357C0.564454 46.831 0 45.4684 0 44.0476V5.79317C0.00275394 4.25758 0.614033 2.78567 1.69994 1.69984C2.78586 0.614007 4.25788 0.0027714 5.79358 1.76685e-05H8.57058C11.1961 -0.00489656 13.7197 1.01548 15.6038 2.84377L15.6708 2.91073L24.8664 12.381L34.7615 2.70835C36.6322 0.965295 39.0949 -0.00268906 41.6519 1.76685e-05H43.6149C45.1506 0.0027714 46.6226 0.614007 47.7085 1.69984C48.7944 2.78567 49.4057 4.25758 49.4084 5.79317V44.0476C49.4084 45.4684 48.844 46.831 47.8392 47.8357C46.8345 48.8404 45.4718 49.4048 44.0509 49.4048ZM33.5754 43.4524H43.4556V5.9524H41.6519C40.6106 5.95134 39.6068 6.34114 38.8392 7.04466L29.02 16.6518L29.3668 17.0104L29.4456 17.1057C31.958 20.1494 33.6996 23.7538 34.5229 27.6135C35.3462 31.4732 35.2269 35.4745 34.1752 39.2783C33.7928 40.6373 33.5911 42.0407 33.5754 43.4524ZM5.95282 43.4524H15.714C15.7005 41.985 15.4923 40.5258 15.0949 39.1131C12.9355 31.4301 14.8121 23.1801 20.1131 17.0447L20.195 16.9494L20.6102 16.5432L11.4369 7.09525C10.6637 6.36026 9.63735 5.95102 8.57058 5.9524H5.95282V43.4524Z"
+                            fill="url(#paint0_linear_1_197)" />
+                        <defs>
+                            <linearGradient id="paint0_linear_1_197" x1="1.63554" y1="1.76341" x2="47.3498" y2="47.4811"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#D32053" />
+                                <stop offset="1" stop-color="#460BC6" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <h2 class="text-white text-3xl mt-6">illionaire<span
+                            class="text-white text-3xl font-bold ml-4">Aisle</span></h2>
+                </h1>
+                <div class="hidden lg:flex ml-4">
+                    <ul class="menu menu-horizontal px-1 text-white font-bold text-base">
+                        <li><a>Draw</a></li>
+                        <li><a>Lottery</a></li>
+                        <li><a>Scratch and Win</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="navbar-end mr-[150px] hidden lg:flex">
+                <img src="./assets/Banner/social-icon.png" alt="" class="mr-[40px]">
+                <div
+                    class="flex items-center text-white border border-solid border-white rounded py-3 px-4 bg-[#FFFFFF33]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                        <mask id="mask0_1_241" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18"
+                            height="17">
+                            <rect x="0.000366211" width="17" height="17" fill="#D9D9D9" />
+                        </mask>
+                        <g mask="url(#mask0_1_241)">
+                            <path
+                                d="M11.3337 9.5625C11.6406 9.5625 11.8945 9.46215 12.0952 9.26146C12.2959 9.06076 12.3962 8.80694 12.3962 8.5C12.3962 8.19306 12.2959 7.93924 12.0952 7.73854C11.8945 7.53785 11.6406 7.4375 11.3337 7.4375C11.0268 7.4375 10.7729 7.53785 10.5722 7.73854C10.3715 7.93924 10.2712 8.19306 10.2712 8.5C10.2712 8.80694 10.3715 9.06076 10.5722 9.26146C10.7729 9.46215 11.0268 9.5625 11.3337 9.5625ZM3.54203 14.875C3.15245 14.875 2.81894 14.7363 2.54151 14.4589C2.26408 14.1814 2.12537 13.8479 2.12537 13.4583V3.54167C2.12537 3.15208 2.26408 2.81858 2.54151 2.54115C2.81894 2.26372 3.15245 2.125 3.54203 2.125H13.4587C13.8483 2.125 14.1818 2.26372 14.4592 2.54115C14.7367 2.81858 14.8754 3.15208 14.8754 3.54167V5.3125H13.4587V3.54167H3.54203V13.4583H13.4587V11.6875H14.8754V13.4583C14.8754 13.8479 14.7367 14.1814 14.4592 14.4589C14.1818 14.7363 13.8483 14.875 13.4587 14.875H3.54203ZM9.2087 12.0417C8.81912 12.0417 8.48561 11.903 8.20818 11.6255C7.93075 11.3481 7.79203 11.0146 7.79203 10.625V6.375C7.79203 5.98542 7.93075 5.65191 8.20818 5.37448C8.48561 5.09705 8.81912 4.95833 9.2087 4.95833H14.167C14.5566 4.95833 14.8901 5.09705 15.1676 5.37448C15.445 5.65191 15.5837 5.98542 15.5837 6.375V10.625C15.5837 11.0146 15.445 11.3481 15.1676 11.6255C14.8901 11.903 14.5566 12.0417 14.167 12.0417H9.2087ZM14.167 10.625V6.375H9.2087V10.625H14.167Z"
+                                fill="white" />
+                        </g>
+                    </svg>
+                    <h2 class="ml-[6px]">Wallet</h2>
+                </div>
+                <div
+                    class="flex items-center text-white border border-solid border-white rounded mx-4 py-3 px-4 bg-[#FFFFFF33]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                        <mask id="mask0_1_247" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18"
+                            height="17">
+                            <rect x="0.000366211" width="17" height="17" fill="#D9D9D9" />
+                        </mask>
+                        <g mask="url(#mask0_1_247)">
+                            <path
+                                d="M4.14444 12.1123C4.74653 11.6519 5.41944 11.2889 6.16319 11.0233C6.90694 10.7577 7.68611 10.6248 8.50069 10.6248C9.31528 10.6248 10.0944 10.7577 10.8382 11.0233C11.5819 11.2889 12.2549 11.6519 12.8569 12.1123C13.2701 11.6283 13.5918 11.0794 13.822 10.4655C14.0523 9.85157 14.1674 9.19637 14.1674 8.49984C14.1674 6.9297 13.6154 5.59272 12.5116 4.4889C11.4078 3.38508 10.0708 2.83317 8.50069 2.83317C6.93055 2.83317 5.59357 3.38508 4.48975 4.4889C3.38593 5.59272 2.83403 6.9297 2.83403 8.49984C2.83403 9.19637 2.94913 9.85157 3.17934 10.4655C3.40955 11.0794 3.73125 11.6283 4.14444 12.1123ZM8.50069 9.20817C7.80416 9.20817 7.21684 8.96911 6.73871 8.49098C6.26059 8.01286 6.02153 7.42553 6.02153 6.729C6.02153 6.03248 6.26059 5.44515 6.73871 4.96703C7.21684 4.4889 7.80416 4.24984 8.50069 4.24984C9.19722 4.24984 9.78455 4.4889 10.2627 4.96703C10.7408 5.44515 10.9799 6.03248 10.9799 6.729C10.9799 7.42553 10.7408 8.01286 10.2627 8.49098C9.78455 8.96911 9.19722 9.20817 8.50069 9.20817ZM8.50069 15.5832C7.52083 15.5832 6.6 15.3972 5.73819 15.0254C4.87639 14.6535 4.12673 14.1488 3.48923 13.5113C2.85173 12.8738 2.34705 12.1241 1.97517 11.2623C1.6033 10.4005 1.41736 9.4797 1.41736 8.49984C1.41736 7.51998 1.6033 6.59914 1.97517 5.73734C2.34705 4.87553 2.85173 4.12588 3.48923 3.48838C4.12673 2.85088 4.87639 2.34619 5.73819 1.97432C6.6 1.60244 7.52083 1.4165 8.50069 1.4165C9.48055 1.4165 10.4014 1.60244 11.2632 1.97432C12.125 2.34619 12.8747 2.85088 13.5122 3.48838C14.1497 4.12588 14.6543 4.87553 15.0262 5.73734C15.3981 6.59914 15.584 7.51998 15.584 8.49984C15.584 9.4797 15.3981 10.4005 15.0262 11.2623C14.6543 12.1241 14.1497 12.8738 13.5122 13.5113C12.8747 14.1488 12.125 14.6535 11.2632 15.0254C10.4014 15.3972 9.48055 15.5832 8.50069 15.5832ZM8.50069 14.1665C9.12639 14.1665 9.71666 14.075 10.2715 13.892C10.8264 13.709 11.334 13.4464 11.7944 13.104C11.334 12.7616 10.8264 12.499 10.2715 12.316C9.71666 12.133 9.12639 12.0415 8.50069 12.0415C7.875 12.0415 7.28472 12.133 6.72986 12.316C6.175 12.499 5.66736 12.7616 5.20694 13.104C5.66736 13.4464 6.175 13.709 6.72986 13.892C7.28472 14.075 7.875 14.1665 8.50069 14.1665ZM8.50069 7.7915C8.80764 7.7915 9.06146 7.69116 9.26215 7.49046C9.46284 7.28977 9.56319 7.03595 9.56319 6.729C9.56319 6.42206 9.46284 6.16824 9.26215 5.96755C9.06146 5.76685 8.80764 5.6665 8.50069 5.6665C8.19375 5.6665 7.93993 5.76685 7.73923 5.96755C7.53854 6.16824 7.43819 6.42206 7.43819 6.729C7.43819 7.03595 7.53854 7.28977 7.73923 7.49046C7.93993 7.69116 8.19375 7.7915 8.50069 7.7915Z"
+                                fill="white" />
+                        </g>
+                    </svg>
+                    <h2 class="ml-[6px]">Account</h2>
+                </div>
+                <div class="bg-[#D32053] flex rounded-md px-4 py-2 items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 20 20" fill="none">
+                        <mask id="mask0_1_227" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="21"
+                            height="20">
+                            <rect x="0.000366211" width="20" height="20" fill="#D9D9D9" />
+                        </mask>
+                        <g mask="url(#mask0_1_227)">
+                            <path
+                                d="M4.16733 17.5001C3.93122 17.5001 3.71594 17.4272 3.5215 17.2813C3.32705 17.1355 3.19511 16.9445 3.12566 16.7084L0.792328 8.29175C0.722884 8.0973 0.754134 7.91675 0.886078 7.75008C1.01802 7.58341 1.19511 7.50008 1.41733 7.50008H5.62566L9.29233 2.04175C9.36177 1.93064 9.459 1.84036 9.584 1.77091C9.709 1.70147 9.84094 1.66675 9.97983 1.66675C10.1187 1.66675 10.2507 1.70147 10.3757 1.77091C10.5007 1.84036 10.5979 1.93064 10.6673 2.04175L14.334 7.50008H18.584C18.8062 7.50008 18.9833 7.58341 19.1152 7.75008C19.2472 7.91675 19.2784 8.0973 19.209 8.29175L16.8757 16.7084C16.8062 16.9445 16.6743 17.1355 16.4798 17.2813C16.2854 17.4272 16.0701 17.5001 15.834 17.5001H4.16733ZM4.584 15.8334H15.4173L17.2507 9.16675H2.75066L4.584 15.8334ZM10.0007 14.1667C10.459 14.1667 10.8514 14.0036 11.1777 13.6772C11.5041 13.3508 11.6673 12.9584 11.6673 12.5001C11.6673 12.0417 11.5041 11.6494 11.1777 11.323C10.8514 10.9966 10.459 10.8334 10.0007 10.8334C9.54233 10.8334 9.14997 10.9966 8.82358 11.323C8.49719 11.6494 8.334 12.0417 8.334 12.5001C8.334 12.9584 8.49719 13.3508 8.82358 13.6772C9.14997 14.0036 9.54233 14.1667 10.0007 14.1667ZM7.6465 7.50008H12.334L9.97983 4.00008L7.6465 7.50008Z"
+                                fill="white" />
+                        </g>
+                    </svg>
+                    <h2 class="ml-[6px] text-base text-white font-bold">Cart</h2>
+                    <span class="bg-white text-[#D32053] rounded-full p-1 font-bold ml-3">01</span>
+                </div>
+                <img src="./assets/Banner/menu.png" alt="" class="p-3 border border-solid border-white rounded ml-7">
+            </div>
+        </div>
+        <!-- banner section  -->
+        <div class="p-10 lg:p-20 mx-20 lg:mx-[150px] mt-[61px]"
+            style="background-image: url('./assets/Banner/banner-gradient.png');">
+            <div class="relative">
+                <div class="flex flex-col lg:flex-row justify-between relative z-20">
+                    <div>
+                        <h1 class="text-white text-2xl lg:text-[80px] font-bold lg:leading-[103px]">
+                            Guarantee your entry <br> to becoming a <br> <span
+                                class=" text-4xl lg:text-[120px] font-bold lg:leading-[135px]">Millionaire</span>
+                        </h1>
+                    </div>
+                    <div class="relative">
+                        <img src="./assets/Banner/banner-img.png" alt="">
+                        <img src="./assets/Banner/banner-img2.png" alt="" class="absolute top-0 left-8">
+                    </div>
+                </div>
+                <h2 class="text-transparent text-[220px] font-bold leading-[148px] absolute bottom-8 z-0 text-opacity-30 hidden lg:flex"
+                    style="-webkit-text-stroke-width: 1px; -webkit-text-stroke-color: gray;">Millionaire</h2>
+            </div>
+            <img src="./assets/Banner/slide-icon.png" alt="" class="mt-10 lg:mt-0 mx-auto lg:mx-0">
+        </div>
+    </header>
+    <main>
+        <!-- Winner and find us section  -->
+        <section class="relative">
+            <!-- Winner List Section  -->
+            <section class="mx-5 lg:mx-[150px] relative z-30">
+                <h2 class="text-[#00142C] text-[55px] font-bold leading-[67px]">Winners Lists</h2>
+                <div class="flex flex-col lg:flex-row justify-between gap-8 mt-[50px]">
+                    <div class="pt-[30px] px-6 bg-[#fff] shadow-lg rounded-md">
+                        <div class="flex flex-col lg:flex-row justify-between gap-3 lg:gap-[335px] mb-5">
+                            <h2 class="text-2xl font-bold text-[#00142C]">Winners Lists</h2>
+                            <p class="text-[#4D5B6C]">Add your name to the winners list</p>
+                        </div>
+                        <div class="overflow-x-auto overflow-y-hidden overflow-scroll">
+                            <table class="table table-xs table-pin-rows">
+                                <thead>
+                                    <tr
+                                        class="bg-[#F6F4F9] border-[#DFDBE8] border border-solid py-4 px-5 text-sm font-medium text-[#4D5B6C]">
+                                        <td class="border border-solid py-[10px] px-[20px]">Name</td>
+                                        <td class="border border-solid py-[10px] px-[20px]">Ticket Number</td>
+                                        <td class="border border-solid py-[10px] px-[20px]">Draw Date</td>
+                                        <td class="border border-solid py-[10px] px-[20px]">Prize</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="text-[#080825] font-semibold text-base py-[10px] px-[20px] hover">
+                                        <td class="border border-solid py-[10px] px-[20px]">Haseen Amjad</td>
+                                        <td class="border border-solid py-[10px] px-[20px]">MAB-35085</td>
+                                        <td class="border border-solid py-[10px] px-[20px]">07/04/2023</td>
+                                        <td class="border border-solid py-[10px] px-[20px]">AED 20,000</td>
+                                    </tr>
+                                    <tr class="text-[#080825] font-semibold text-base py-[10px] px-[20px] hover">
+                                        <td class="border border-solid py-[10px] px-[20px]">Mohamed Ranesh</td>
+                                        <td class="border border-solid py-[10px] px-[20px]">MAB-MAB-37487</td>
+                                        <td class="border border-solid py-[10px] px-[20px]">07/04/2023</td>
+                                        <td class="border border-solid py-[10px] px-[20px]">AED 20,000</td>
+                                    </tr>
+                                    <tr class="text-[#080825] font-semibold text-base py-[10px] px-[20px] hover">
+                                        <td class="border border-solid py-[10px] px-[20px]">Mouhamad Ibrahim</td>
+                                        <td class="border border-solid py-[10px] px-[20px]">MAB-35171</td>
+                                        <td class="border border-solid py-[10px] px-[20px]">07/04/2023</td>
+                                        <td class="border border-solid py-[10px] px-[20px]">AED 20,000</td>
+                                    </tr>
+                                    <tr class="text-[#080825] font-semibold text-base py-[10px] px-[20px] hover">
+                                        <td class="border border-solid py-[10px] px-[20px]">Dhanji Yadav</td>
+                                        <td class="border border-solid py-[10px] px-[20px]">MAB-25178</td>
+                                        <td class="border border-solid py-[10px] px-[20px]">06/03/2023</td>
+                                        <td class="border border-solid py-[10px] px-[20px]">AED 1,000,000</td>
+                                    </tr>
+                                    <tr class="text-[#080825] font-semibold text-base py-[10px] px-[20px] hover">
+                                        <td class="border border-solid py-[10px] px-[20px]">Tareq Mohammad</td>
+                                        <td class="border border-solid py-[10px] px-[20px]">MAB-26364</td>
+                                        <td class="border border-solid py-[10px] px-[20px]">06/03/2023</td>
+                                        <td class="border border-solid py-[10px] px-[20px]">AED 20,000</td>
+                                    </tr>
+                                    <tr class="text-[#080825] font-semibold text-base py-[10px] px-[20px] hover">
+                                        <td class="border border-solid py-[10px] px-[20px]">Saheer</td>
+                                        <td class="border border-solid py-[10px] px-[20px]">MAB-30378</td>
+                                        <td class="border border-solid py-[10px] px-[20px]">06/04/2023</td>
+                                        <td class="border border-solid py-[10px] px-[20px]">AED 20,000</td>
+                                    </tr>
+                                    <tr class="text-[#080825] font-semibold text-base py-[10px] px-[20px] hover">
+                                        <td class="border border-solid py-[10px] px-[20px]">Gagandeep A Madi</td>
+                                        <td class="border border-solid py-[10px] px-[20px]">MAB-15853</td>
+                                        <td class="border border-solid py-[10px] px-[20px]">06/03/2023</td>
+                                        <td class="border border-solid py-[10px] px-[20px]">AED 20,000</td>
+                                    </tr>
+                                    <tr class="text-[#080825] font-semibold text-base py-[10px] px-[20px] hover">
+                                        <td class="border border-solid py-[10px] px-[20px]">Usman Ali Ahmad</td>
+                                        <td class="border border-solid py-[10px] px-[20px]">MAB-35085</td>
+                                        <td class="border border-solid py-[10px] px-[20px]">03/02/2023</td>
+                                        <td class="border border-solid py-[10px] px-[20px]">AED 20,000</td>
+                                    </tr>
+                                    <tr class="text-[#080825] font-semibold text-base py-[10px] px-[20px] hover">
+                                        <td class="border border-solid py-[10px] px-[20px]">Md Ismail Hossain</td>
+                                        <td class="border border-solid py-[10px] px-[20px]">MAB-32058</td>
+                                        <td class="border border-solid py-[10px] px-[20px]">03/02/2023</td>
+                                        <td class="border border-solid py-[10px] px-[20px]">AED 20,000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="relative">
+                            <img src="./assets/Winner/vdoimg.png" alt="">
+                            <img class="absolute top-1/2 left-1/2" src="./assets/Winner/vdoicon.png" alt="">
+                        </div>
+                        <div class="flex flex-wrap items-center space-x-[15px] mt-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <rect x="0.499113" y="0.499113" width="39.0018" height="39.0018" rx="4.50089" fill="white"
+                                    stroke="#DFDBE8" stroke-width="0.998226" />
+                                <mask id="mask0_1_453" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="10" y="10" width="20"
+                                    height="20">
+                                    <rect width="20" height="20" transform="matrix(4.37114e-08 1 1 -4.37114e-08 10 10)"
+                                        fill="#00142C" />
+                                </mask>
+                                <g mask="url(#mask0_1_453)">
+                                    <path
+                                        d="M22.8132 16.1667L21.6465 15L16.6465 20L21.6465 25L22.8132 23.8333L18.9798 20L22.8132 16.1667Z"
+                                        fill="#00142C" />
+                                </g>
+                            </svg>
+                            <img src="./assets/Winner/image-1.png" alt="">
+                            <img src="./assets/Winner/image-2.png" alt="">
+                            <img src="./assets/Winner/image-2.png" alt="">
+                            <img src="./assets/Winner/image-2.png" alt="">
+                            <img src="./assets/Winner/image-2.png" alt="">
+                            <img src="./assets/Winner/image-2.png" alt="">
+                            <img src="./assets/Winner/image-2.png" alt="">
+                            <img src="./assets/Winner/image-2.png" alt="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <rect x="0.499113" y="0.499113" width="39.0018" height="39.0018" rx="4.50089" fill="white"
+                                    stroke="#DFDBE8" stroke-width="0.998226" />
+                                <mask id="mask0_1_448" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="10" y="10" width="20"
+                                    height="20">
+                                    <rect x="30" y="10" width="20" height="20" transform="rotate(90 30 10)" fill="#00142C" />
+                                </mask>
+                                <g mask="url(#mask0_1_448)">
+                                    <path
+                                        d="M17.1868 16.1667L18.3535 15L23.3535 20L18.3535 25L17.1868 23.8333L21.0202 20L17.1868 16.1667Z"
+                                        fill="#00142C" />
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Find Us Section  -->
+            <section class="relative z-20">
+                <div class="flex flex-col lg:flex-row justify-between mx-[150px] mt-10 relative bottom-[-40px]">
+                    <div>
+                        <h1 class="text-5xl lg:text-[55px] text-[#00142C] font-bold leading-[67px]">Find us</h1>
+                    </div>
+                    <div class="flex flex-col lg:flex-row justify-evenly gap-12">
+                        <div class="text-right">
+                            <p class="text-[#334356] font-normal text-base">Business Hours</p>
+                            <p class="text-[#334356] font-bold text-base">Everyday: 9am - 9pm GMT</p>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-[#334356] font-normal text-base">Write us an email</p>
+                            <p class="text-[#334356] font-bold text-base">support@millionaireaisle.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidemapbar">
+                    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1pcO0mEazwCXK_7ewcUKL5kAqF1PGMeQ&ehbc=2E312F&noprof=1"
+                        class="w-full" height="700"></iframe>
+                </div>
+            </section>
+
+            <div class="absolute z-0 left-0 top-6 hidden lg:flex">
+                <svg xmlns="http://www.w3.org/2000/svg" width="970" height="1105" viewBox="0 0 970 1105" fill="none">
+                    <path opacity="0.06"
+                        d="M339.184 12.6649L499.647 105.308C522.791 118.726 539.675 140.77 546.599 166.611C553.523 192.452 549.923 219.984 536.588 243.177C519.1 273.473 497.558 301.242 472.561 325.714C435.757 362.014 408.176 406.597 392.123 455.735C376.069 504.873 372.01 557.14 380.284 608.167L381.251 611.989L386.405 610.684C485.907 575.33 560.39 494.698 585.944 394.439C594.814 359.615 608.42 326.173 626.383 295.049C639.797 271.897 661.841 255.007 687.686 248.078C713.531 241.15 741.068 244.748 764.264 258.085L922.931 349.692C944.368 362.068 960.01 382.453 966.416 406.363C972.823 430.272 969.469 455.747 957.093 477.184L623.864 1054.35C610.446 1077.5 588.402 1094.38 562.561 1101.3C536.72 1108.23 509.188 1104.63 485.996 1091.29L444.1 1067.11C404.448 1044.31 375.264 1006.94 362.765 962.94L362.338 961.346L306.101 738.367L72.5626 798.115C29.1567 808.12 -16.4288 801.274 -54.9813 778.961L-84.5953 761.863C-107.74 748.446 -124.623 726.402 -131.547 700.561C-138.471 674.72 -134.872 647.188 -121.537 623.995L211.692 46.8261C224.068 25.3896 244.453 9.74765 268.363 3.34116C292.272 -3.06534 317.747 0.288452 339.184 12.6649ZM445.372 193.716L296.314 107.657L-30.3427 673.443L-3.13105 689.154C12.5693 698.24 31.108 701.102 48.8174 697.173L280.641 637.751L278.534 629.32L278.173 627.196C266.784 559.391 271.907 489.839 293.107 424.435C314.308 359.03 350.962 299.699 399.964 251.469C417.571 234.296 432.838 214.878 445.372 193.716ZM862.1 434.314L714.839 349.292C702.259 371.55 692.689 395.379 686.38 420.155C652.032 554.882 551.855 663.009 418.437 709.405L416.373 710.129L406.57 712.642L462.664 935.09C467.925 952.913 479.845 968.028 495.951 977.299L535.443 1000.1L862.1 434.314Z"
+                        fill="url(#paint0_linear_1_192)" />
+                    <defs>
+                        <linearGradient id="paint0_linear_1_192" x1="564.087" y1="1100.91" x2="272.577" y2="12.9759"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#D32053" />
+                            <stop offset="1" stop-color="#460BC6" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
