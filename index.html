@@ -145,8 +145,20 @@
                         </h1>
                     </div>
                     <div class="relative">
-                        <img src="./assets/Banner/banner-img.png" alt="">
-                        <img src="./assets/Banner/banner-img2.png" alt="" class="absolute top-0 left-8">
+                        <img src="./assets/Banner/banner-img.png" alt="" class="relative z-10">
+                        <img src="./assets/Banner/banner-img2.png" alt="" class="absolute top-0 left-8 z-20">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="208" height="257" viewBox="0 0 208 257" fill="none" class="absolute top-32 -right-20 z-0">
+                            <path opacity="0.1"
+                                d="M229.133 257H173.808C165.82 256.986 158.163 253.806 152.515 248.158C146.866 242.509 143.687 234.852 143.672 226.864C143.671 216.419 145.096 206.023 147.907 195.963C152.004 181.081 152.48 165.435 149.295 150.332C146.11 135.229 139.357 121.107 129.599 109.148L128.779 108.304L127.641 109.411C107.189 133.408 99.9668 165.378 108.327 195.119C111.232 205.448 112.707 216.127 112.708 226.857C112.696 234.846 109.517 242.505 103.869 248.155C98.2202 253.805 90.5623 256.986 82.5729 257H27.8675C20.4766 257 13.3884 254.064 8.1622 248.838C2.93603 243.612 0 236.523 0 229.133V30.1356C0.0143247 22.1476 3.19392 14.4908 8.84233 8.84243C14.4907 3.19402 22.1475 0.0144166 30.1356 9.19101e-05H44.5802C58.2367 -0.0254715 71.3635 5.28244 81.164 14.7931L81.5123 15.1414L129.344 64.4049L180.813 14.0886C190.544 5.0214 203.354 -0.0139883 216.654 9.19101e-05H226.864C234.852 0.0144166 242.509 3.19402 248.158 8.84243C253.806 14.4908 256.986 22.1476 257 30.1356V229.133C257 236.523 254.064 243.612 248.838 248.838C243.612 254.064 236.523 257 229.133 257ZM174.644 226.036H226.036V30.9639H216.654C211.238 30.9584 206.017 32.9861 202.024 36.6458L150.949 86.6215L152.752 88.487L153.163 88.9824C166.231 104.816 175.29 123.565 179.572 143.643C183.855 163.721 183.234 184.536 177.764 204.323C175.774 211.392 174.726 218.693 174.644 226.036ZM30.9639 226.036H81.7368C81.6668 218.403 80.5839 210.812 78.5166 203.463C67.2845 163.497 77.0458 120.581 104.619 88.665L105.045 88.1697L107.205 86.0563L59.4893 36.909C55.4679 33.0856 50.1291 30.9568 44.5802 30.9639H30.9639V226.036Z"
+                                fill="url(#paint0_linear_1_255)" />
+                            <defs>
+                                <linearGradient id="paint0_linear_1_255" x1="8.50732" y1="9.17313" x2="246.31" y2="246.976"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#D32053" />
+                                    <stop offset="1" stop-color="#460BC6" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
                     </div>
                 </div>
                 <h2 class="text-transparent text-[220px] font-bold leading-[148px] absolute bottom-8 z-0 text-opacity-30 hidden lg:flex"
@@ -156,10 +168,352 @@
         </div>
     </header>
     <main>
+        <!-- Main Section  -->
+        <section>
+            <div class="lg:mx-[150px] mt-32">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-5 space-x-6">
+                    <!-- Draw -->
+                    <div class="border p-7 bg-[#FFFFFF] shadow-xl">
+                        <div class="flex justify-between">
+                            <h2 class="text-[#080825] text-4xl font-bold">Draw</h2>
+                            <div class="bg-[#f9e8ef] rounded-md">
+                                <button class="text-lg font-bold bg-gradient-to-r from-[#D32053] to-[#460BC6] text-transparent bg-clip-text py-3 px-4">
+                                    View All
+                                </button>
+                            </div>
+                        </div>
+                    
+                        <!-- Bronze Pen -->
+                        <div class="mt-[30px] p-5 border hover:border-none hover:shadow-xl border-solid rounded border-[#C1B9D3] flex items-center justify-items-center">
+                            <div class="mx-auto">
+                                <!--Draw image -->
+                                <div>
+                                    <div>
+                                        <img src="https://i.postimg.cc/nLMy8kcg/Rectangle-7.png" alt="" />
+                                        <img class="mt-3" src="https://i.postimg.cc/7ZPv9Dvx/Rectangle-6.png" alt="" />
+                                    </div>
+                                </div>
+                                
+                                <!-- Draw Content -->
+                                <div class="mt-4">
+                                    <div class="flex justify-between items-center">
+                                        <h3 class="uppercase text-white text-sm font-semibold bg-[#460BC6] w-fit p-1 rounded-[3px]">
+                                            bronze pen
+                                        </h3>
+                                        <button class="border px-1.5 rounded-sm">
+                                            <i class="fa-regular fa-heart text-[#D32053]"></i>
+                                        </button>
+                                    </div>
+                                
+                                    <h2 class="uppercase text-2xl font-bold my-4">
+                                        <span class="text-[#D32053]">Win:</span> 500
+                                        <span class="font-normal">aed</span>
+                                    </h2>
+                                
+                                    <p class="text-[#334356]">
+                                        Entry Price:
+                                        <span class="text-base font-bold text-[#D32053]">10.00 AED</span>
+                                    </p>
+                                
+                                    <!-- cart area -->
+                                    <div class="flex flex-col lg:flex-row gap-5 justify-between items-center mt-3">
+                                        <div class="border rounded-[5px] border-solid border-[#DFDBE8]">
+                                            <button class="border-r p-4 text-[#00142C] text-base font-bold">-</button>
+                                            <span class="p-4 text-[#00142C] text-base font-bold">1</span>
+                                            <button class="border-l p-4 text-[#00142C] text-base font-bold">+</button>
+                                        </div>
+                                        <div class="rounded-[5px] bg-gradient-to-r from-[#D32053] to-[#460BC6] p-[2px]">
+                                            <div class="flex items-center justify-center bg-white hover:bg-gradient-to-r hover:from-[#D32053] hover:to-[#460BC6] back">
+                                                <button
+                                                    class="px-[79px] py-4 font-bold hover:text-white bg-gradient-to-r from-[#D32053] to-[#460BC6] text-transparent bg-clip-text ">
+                                                    Add To Cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    <!-- time -->
+                                    <div class="flex rounded-md border border-[#EEEBF5] bg-[#EEEBF5] w-full mt-4">
+                                        <div class="p-1.5">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                                <mask id="mask0_1_545" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="30"
+                                                    height="30">
+                                                    <rect width="30" height="30" fill="#0D70F3" />
+                                                </mask>
+                                                <g mask="url(#mask0_1_545)">
+                                                    <path
+                                                        d="M13.6875 23.5625L8.625 18.5L10.9688 16.1562L13.6875 18.875L19.0938 13.4688L21.4375 15.8125L13.6875 23.5625ZM6.0625 28.4375C5.14583 28.4375 4.36458 28.1146 3.71875 27.4688C3.07292 26.8229 2.75 26.0417 2.75 25.125V7.25C2.75 6.33333 3.07292 5.55208 3.71875 4.90625C4.36458 4.26042 5.14583 3.9375 6.0625 3.9375H6.3125V1.5625H9.625V3.9375H20.375V1.5625H23.6875V3.9375H23.9375C24.8542 3.9375 25.6354 4.26042 26.2812 4.90625C26.9271 5.55208 27.25 6.33333 27.25 7.25V25.125C27.25 26.0417 26.9271 26.8229 26.2812 27.4688C25.6354 28.1146 24.8542 28.4375 23.9375 28.4375H6.0625ZM6.0625 25.125H23.9375V11.875H6.0625V25.125Z"
+                                                        fill="#3EAE3C" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                
+                                        <div class="py-1">
+                                            <p class="text-[#4D5B6C] font-bold text-xs">Announce Time</p>
+                                            <p class="text-[#00142C] text-sm font-bold">
+                                                Every Day at 4PM UAE Time
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Silver Pen -->
+                        <div class="mt-[30px] p-5 border hover:border-none hover:shadow-xl border-solid rounded border-[#C1B9D3] flex items-center justify-items-center">
+                            <div class="mx-auto">
+                                <!--Silver image -->
+                                <div>
+                                    <div>
+                                        <img src="https://i.postimg.cc/DZG5Sfv7/Rectangle-8.png" alt="" />
+                                        <img class="mt-3" src="https://i.postimg.cc/25M2jLfH/Group-4998.png" alt="" />
+                                    </div>
+                                </div>
+                                
+                                <!-- Silver Content -->
+                                <div class="mt-4">
+                                    <div class="flex justify-between items-center">
+                                        <h3 class="uppercase text-white text-sm font-semibold bg-[#460BC6] w-fit p-1 rounded-[3px]">
+                                            Silver pen
+                                        </h3>
+                                        <button class="border px-1.5 rounded-sm">
+                                            <i class="fa-regular fa-heart text-[#D32053]"></i>
+                                        </button>
+                                    </div>
+                                
+                                    <h2 class="uppercase text-2xl font-bold my-4">
+                                        <span class="text-[#D32053]">Win:</span> 50 000
+                                        <span class="font-normal">aed</span>
+                                    </h2>
+                                
+                                    <p class="text-[#334356]">
+                                        Entry Price:
+                                        <span class="text-base font-bold text-[#D32053]">20.00 AED</span>
+                                    </p>
+                                
+                                    <!-- cart area -->
+                                    <div class="flex flex-col lg:flex-row gap-5 justify-between items-center mt-3">
+                                        <div class="border rounded-[5px] border-solid border-[#DFDBE8]">
+                                            <button class="border-r p-4 text-[#00142C] text-base font-bold">-</button>
+                                            <span class="p-4 text-[#00142C] text-base font-bold">1</span>
+                                            <button class="border-l p-4 text-[#00142C] text-base font-bold">+</button>
+                                        </div>
+                                        <div class="rounded-[5px] bg-gradient-to-r from-[#D32053] to-[#460BC6] p-[2px]">
+                                            <div
+                                                class="flex items-center justify-center bg-white hover:bg-gradient-to-r hover:from-[#D32053] hover:to-[#460BC6] back">
+                                                <button
+                                                    class="px-[79px] py-4 font-bold hover:text-white bg-gradient-to-r from-[#D32053] to-[#460BC6] text-transparent bg-clip-text ">
+                                                    Add To Cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    <!-- time area-->
+                                    <div class="flex rounded-md border border-[#EEEBF5] bg-[#EEEBF5] w-full mt-4">
+                                        <div class="p-1.5">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                                <mask id="mask0_1_545" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="30"
+                                                    height="30">
+                                                    <rect width="30" height="30" fill="#0D70F3" />
+                                                </mask>
+                                                <g mask="url(#mask0_1_545)">
+                                                    <path
+                                                        d="M13.6875 23.5625L8.625 18.5L10.9688 16.1562L13.6875 18.875L19.0938 13.4688L21.4375 15.8125L13.6875 23.5625ZM6.0625 28.4375C5.14583 28.4375 4.36458 28.1146 3.71875 27.4688C3.07292 26.8229 2.75 26.0417 2.75 25.125V7.25C2.75 6.33333 3.07292 5.55208 3.71875 4.90625C4.36458 4.26042 5.14583 3.9375 6.0625 3.9375H6.3125V1.5625H9.625V3.9375H20.375V1.5625H23.6875V3.9375H23.9375C24.8542 3.9375 25.6354 4.26042 26.2812 4.90625C26.9271 5.55208 27.25 6.33333 27.25 7.25V25.125C27.25 26.0417 26.9271 26.8229 26.2812 27.4688C25.6354 28.1146 24.8542 28.4375 23.9375 28.4375H6.0625ZM6.0625 25.125H23.9375V11.875H6.0625V25.125Z"
+                                                        fill="#3EAE3C" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                
+                                        <div class="py-1">
+                                            <p class="text-[#4D5B6C] font-bold text-xs">Announce Time</p>
+                                            <p class="text-[#00142C] text-sm font-bold">
+                                                Every Day at 4PM UAE Time
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Gold Pen -->
+                        <div class="mt-[30px] p-5 border hover:border-none hover:shadow-xl border-solid rounded border-[#C1B9D3] flex items-center justify-items-center">
+                            <div class="mx-auto">
+                                <!--Gold image -->
+                                <div>
+                                    <div>
+                                        <img src="https://i.postimg.cc/rwjqHWrt/Rectangle-8-1.png" alt="" />
+                                        <img class="mt-3" src="https://i.postimg.cc/VN7LJMsc/Rectangle-9.png" alt="" />
+                                    </div>
+                                </div>
+                                
+                                <!-- Gold Content -->
+                                <div class="mt-4">
+                                    <div class="flex justify-between items-center">
+                                        <h3 class="uppercase text-white text-sm font-semibold bg-[#460BC6] w-fit p-1 rounded-sm">
+                                            Gold pen
+                                        </h3>
+                                        <button class="border px-1.5 rounded-sm">
+                                            <i class="fa-regular fa-heart text-[#D32053]"></i>
+                                        </button>
+                                    </div>
+                                
+                                    <h2 class="uppercase text-2xl font-bold my-4">
+                                        <span class="text-[#D32053]">Win:</span> 100 000
+                                        <span class="font-normal">aed</span>
+                                    </h2>
+                                
+                                    <p class="text-[#334356]">
+                                        Entry Price:
+                                        <span class="text-base font-bold text-[#D32053]">35.00 AED</span>
+                                    </p>
+                                
+                                    <!-- cart area -->
+                                    <div class="flex flex-col lg:flex-row gap-5 justify-between items-center mt-3">
+                                        <div class="border rounded-[5px] border-solid border-[#DFDBE8]">
+                                            <button class="border-r p-4 text-[#00142C] text-base font-bold">-</button>
+                                            <span class="p-4 text-[#00142C] text-base font-bold">1</span>
+                                            <button class="border-l p-4 text-[#00142C] text-base font-bold">+</button>
+                                        </div>
+                                        <div class="rounded-[5px] bg-gradient-to-r from-[#D32053] to-[#460BC6] p-[2px]">
+                                            <div
+                                                class="flex items-center justify-center bg-white hover:bg-gradient-to-r hover:from-[#D32053] hover:to-[#460BC6] back">
+                                                <button
+                                                    class="px-[79px] py-4 font-bold hover:text-white bg-gradient-to-r from-[#D32053] to-[#460BC6] text-transparent bg-clip-text ">
+                                                    Add To Cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    <!-- time area-->
+                                    <div class="flex rounded-md border border-[#EEEBF5] bg-[#EEEBF5] w-full mt-4">
+                                        <div class="p-1.5">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                                <mask id="mask0_1_545" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="30"
+                                                    height="30">
+                                                    <rect width="30" height="30" fill="#0D70F3" />
+                                                </mask>
+                                                <g mask="url(#mask0_1_545)">
+                                                    <path
+                                                        d="M13.6875 23.5625L8.625 18.5L10.9688 16.1562L13.6875 18.875L19.0938 13.4688L21.4375 15.8125L13.6875 23.5625ZM6.0625 28.4375C5.14583 28.4375 4.36458 28.1146 3.71875 27.4688C3.07292 26.8229 2.75 26.0417 2.75 25.125V7.25C2.75 6.33333 3.07292 5.55208 3.71875 4.90625C4.36458 4.26042 5.14583 3.9375 6.0625 3.9375H6.3125V1.5625H9.625V3.9375H20.375V1.5625H23.6875V3.9375H23.9375C24.8542 3.9375 25.6354 4.26042 26.2812 4.90625C26.9271 5.55208 27.25 6.33333 27.25 7.25V25.125C27.25 26.0417 26.9271 26.8229 26.2812 27.4688C25.6354 28.1146 24.8542 28.4375 23.9375 28.4375H6.0625ZM6.0625 25.125H23.9375V11.875H6.0625V25.125Z"
+                                                        fill="#3EAE3C" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                
+                                        <div class="py-1">
+                                            <p class="text-[#4D5B6C] font-bold text-xs">Announce Time</p>
+                                            <p class="text-[#00142C] text-sm font-bold">
+                                                Every Day at 4PM UAE Time
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lottery -->
+                    <div class="border">fsdfsfsdfsf</div>
+
+                    <!-- Scratch Cards -->
+                    <div class="border p-7 bg-[#FFFFFF] shadow-xl">
+                        <div class="flex justify-between">
+                            <h2 class="text-[#080825] text-4xl font-bold">Scratch Cards</h2>
+                            <div class="bg-[#f9e8ef] rounded-md">
+                                <button
+                                    class="text-lg font-bold bg-gradient-to-r from-[#D32053] to-[#460BC6] text-transparent bg-clip-text py-3 px-4">
+                                    View All
+                                </button>
+                            </div>
+                        </div>
+                        <div class="mt-[30px] p-5 border hover:border-none hover:shadow-xl border-solid rounded border-[#C1B9D3] flex items-center justify-items-center">
+                            <div class="mx-auto">
+                                <img src="./assets/main/scratch.png" alt="" class="w-[420px] h-[350px]">
+                                <h4
+                                    class="italic font-bold text-base mt-4 mb-1 bg-gradient-to-r from-[#D32053] to-[#460BC6] text-transparent bg-clip-text">
+                                    WIN UP TO:</h4>
+                                <h1 class="text-2xl font-bold text-[#00142C]">50,000-100,000 AED</h1>
+                                <h5 class="text-base font-bold text-[#334356] mt-3 mb-4">Entry Price: <span
+                                        class="text-[#D32053]">10.00 AED</span></h5>
+                                <div class="flex flex-col lg:flex-row gap-5 justify-between items-center mt-3">
+                                    <div class="border rounded-[5px] border-solid border-[#DFDBE8]">
+                                        <button class="border-r p-4 text-[#00142C] text-base font-bold">-</button>
+                                        <span class="p-4 text-[#00142C] text-base font-bold">1</span>
+                                        <button class="border-l p-4 text-[#00142C] text-base font-bold">+</button>
+                                    </div>
+                                    <div class="rounded-[5px] bg-gradient-to-r from-[#D32053] to-[#460BC6] p-[2px]">
+                                        <div class="flex items-center justify-center bg-white hover:bg-gradient-to-r hover:from-[#D32053] hover:to-[#460BC6]  back">
+                                            <button
+                                                class="px-[79px] py-4 hover:text-white font-bold bg-gradient-to-r from-[#D32053] to-[#460BC6] text-transparent bg-clip-text ">
+                                                Add To Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-[30px] p-5 border hover:border-none hover:shadow-xl border-solid rounded border-[#C1B9D3] flex items-center justify-items-center">
+                            <div class="mx-auto">
+                                <img src="./assets/main/scratch.png" alt="" class="w-[420px] h-[350px]">
+                                <h4
+                                    class="italic font-bold text-base mt-4 mb-1 bg-gradient-to-r from-[#D32053] to-[#460BC6] text-transparent bg-clip-text">
+                                    WIN UP TO:</h4>
+                                <h1 class="text-2xl font-bold text-[#00142C]">50,000-100,000 AED</h1>
+                                <h5 class="text-base font-bold text-[#334356] mt-3 mb-4">Entry Price: <span class="text-[#D32053]">10.00
+                                        AED</span></h5>
+                                <div class="flex flex-col lg:flex-row gap-5 justify-between items-center mt-3">
+                                    <div class="border rounded-[5px] border-solid border-[#DFDBE8]">
+                                        <button class="border-r p-4 text-[#00142C] text-base font-bold">-</button>
+                                        <span class="p-4 text-[#00142C] text-base font-bold">1</span>
+                                        <button class="border-l p-4 text-[#00142C] text-base font-bold">+</button>
+                                    </div>
+                                    <div class="rounded-[5px] bg-gradient-to-r from-[#D32053] to-[#460BC6] p-[2px]">
+                                        <div class="flex items-center justify-center bg-white hover:bg-gradient-to-r hover:from-[#D32053] hover:to-[#460BC6]  back">
+                                            <button
+                                                class="px-[79px] py-4 hover:text-white font-bold bg-gradient-to-r from-[#D32053] to-[#460BC6] text-transparent bg-clip-text ">
+                                                Add To Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-[30px] p-5 border hover:border-none hover:shadow-xl border-solid rounded border-[#C1B9D3] flex items-center justify-items-center">
+                            <div class="mx-auto">
+                                <img src="./assets/main/scratch.png" alt="" class="w-[420px] h-[350px]">
+                                <h4
+                                    class="italic font-bold text-base mt-4 mb-1 bg-gradient-to-r from-[#D32053] to-[#460BC6] text-transparent bg-clip-text">
+                                    WIN UP TO:</h4>
+                                <h1 class="text-2xl font-bold text-[#00142C]">50,000-100,000 AED</h1>
+                                <h5 class="text-base font-bold text-[#334356] mt-3 mb-4">Entry Price: <span class="text-[#D32053]">10.00
+                                        AED</span></h5>
+                                <div class="flex flex-col lg:flex-row gap-5 justify-between items-center mt-3">
+                                    <div class="border rounded-[5px] border-solid border-[#DFDBE8]">
+                                        <button class="border-r p-4 text-[#00142C] text-base font-bold">-</button>
+                                        <span class="p-4 text-[#00142C] text-base font-bold">1</span>
+                                        <button class="border-l p-4 text-[#00142C] text-base font-bold">+</button>
+                                    </div>
+                                    <div class="rounded-[5px] bg-gradient-to-r from-[#D32053] to-[#460BC6] p-[2px]">
+                                        <div class="flex items-center justify-center bg-white hover:bg-gradient-to-r hover:from-[#D32053] hover:to-[#460BC6]  back">
+                                            <button
+                                                class="px-[79px] py-4 hover:text-white font-bold bg-gradient-to-r from-[#D32053] to-[#460BC6] text-transparent bg-clip-text ">
+                                                Add To Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- Winner and find us section  -->
         <section class="relative">
             <!-- Winner List Section  -->
-            <section class="mx-5 lg:mx-[150px] relative z-30">
+            <section class="mx-5 lg:mx-[150px] mt-[130px] relative z-30">
                 <h2 class="text-[#00142C] text-[55px] font-bold leading-[67px]">Winners Lists</h2>
                 <div class="flex flex-col lg:flex-row justify-between gap-8 mt-[50px]">
                     <div class="pt-[30px] px-6 bg-[#fff] shadow-lg rounded-md">
@@ -327,10 +681,11 @@
         <section class="mx-5 lg:mx-[150px] lg:my-[120px]">
             <div class="flex justify-between items-center flex-col lg:flex-row mb-8">
                 <h2 class="text-[#00142C] text-[55px] font-bold leading-[67px]">Latest News</h2>
-                <div class="bg-gray-200 border rounded-md px-4 py-3">
-                    <a class="text-lg font-bold"
-                        style="background: var(--Gr, linear-gradient(135deg, #D32053 3.44%, #460BC6 95.97%));  background-clip: text;  -webkit-background-clip: text; -webkit-text-fill-color: transparent;">View
-                        All</a>
+                <div class="bg-[#f9e8ef] rounded-md">
+                    <button
+                        class="text-lg font-bold bg-gradient-to-r from-[#D32053] to-[#460BC6] text-transparent bg-clip-text py-3 px-4">
+                        View All
+                    </button>
                 </div>
             </div>
             <div class="grid gap-8 grid-cols-2 lg:grid-cols-4">
@@ -409,8 +764,9 @@
             </div>
         </section>
     </main>
-    <footer class="relative" style="background-image: url('./assets/Footer/footer-bg.png');">
-        <div class="absolute top-0 left-0">
+    <!-- Footer Section  -->
+    <footer class="relative bg-no-repeat bg-cover" style="background-image: url('./assets/Footer/footer-bg.png');">
+        <div class="absolute top-0 left-0 hidden md:flex">
             <svg xmlns="http://www.w3.org/2000/svg" width="480" height="120" viewBox="0 0 480 120" fill="none">
                 <path
                     d="M0 63.5C0 63.5 76.4426 41 165.295 26.0001C286.911 5.46884 480 0 480 0C480 0 306.763 11.2197 165.295 55C94.8744 76.793 0 120 0 120V63.5Z"
@@ -424,9 +780,9 @@
                 </defs>
             </svg>
         </div>
-        <div class="" style="background-image: url('./assets/Footer/footer-gd.png');">
-            <div class="mx-[150px] pt-[170px] pb-[50px]">
-                <div class="flex items-center lg:gap-[175px]">
+        <div class="bg-no-repeat bg-cover" style="background-image: url('./assets/Footer/footer-gd.png');">
+            <div class="mx-10 lg:mx-[150px] pt-[260px] lg:pt-[170px] pb-[50px]">
+                <div class="flex flex-col lg:flex-row items-start md:items-center gap-12 lg:gap-[175px]">
                     <div>
                         <div class="flex">
                             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"
@@ -487,11 +843,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="bg-[#D9D9D9] rounded-md flex items-center justify-around gap-56 my-14 bg-opacity-10">
+                <div
+                    class="bg-[#D9D9D9] rounded-md flex flex-col lg:flex-row items-center justify-around gap-12 lg:gap-56 my-14 bg-opacity-10">
                     <div>
                         <h2 class="text-white text-2xl font-bold leading-[67px]">Download The App Now</h2>
                     </div>
-                    <div class="flex gap-6 h-12">
+                    <div class="flex flex-col lg:flex-row gap-6 h-12">
                         <img src="./assets/Download/apple.png" alt="">
                         <img src="./assets/Download/google.png" alt="">
                     </div>
@@ -499,7 +856,7 @@
                         <img src="./assets/Footer/Screen.png" alt="" class="h-24">
                     </div>
                 </div>
-                <div class="flex justify-between text-white opacity-70 text-base font-normal">
+                <div class="flex flex-col lg:flex-row justify-between text-white opacity-70 text-base font-normal">
                     <p>© millionaireaisle 2023. All rights reserved.</p>
                     <p>Design & Developed by Royex Technologies</p>
                 </div>
